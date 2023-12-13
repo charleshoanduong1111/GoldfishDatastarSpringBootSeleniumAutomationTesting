@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.validation.constraints.Size;
 
 @Entity
-public class Todo {
+public class Event {
     
 	@Id
 	@GeneratedValue
@@ -22,11 +22,11 @@ public class Todo {
     private Date targetDate;
     private boolean isDone;
 
-    public Todo() {
+    public Event() {
     		super();
     }
     
-    public Todo(int id, String user, String desc, Date targetDate,
+    public Event(int id, String user, String desc, Date targetDate,
             boolean isDone) {
         super();
         this.id = id;
@@ -95,7 +95,7 @@ public class Todo {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        Todo other = (Todo) obj;
+        Event other = (Event) obj;
         if (id != other.id) {
             return false;
         }
@@ -105,7 +105,7 @@ public class Todo {
     @Override
     public String toString() {
         return String.format(
-                "Todo [id=%s, user=%s, desc=%s, targetDate=%s, isDone=%s]", id,
+                "Event [id=%s, user=%s, desc=%s, targetDate=%s, isDone=%s]", id,
                 user, desc, targetDate, isDone);
     }
 

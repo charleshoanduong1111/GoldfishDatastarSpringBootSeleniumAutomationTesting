@@ -16,15 +16,15 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import com.goldfish.datastar.springboot.web.model.Todo;
-import com.goldfish.datastar.springboot.web.service.TodoRepository;
+import com.goldfish.datastar.springboot.web.model.Event;
+import com.goldfish.datastar.springboot.web.service.EventRepository;
 
 @Controller
 @SessionAttributes("name")
-public class TodoController {
+public class EventController {
 
 	@Autowired
-	TodoRepository repository;
+	EventRepository repository;
 
 	@InitBinder
 	public void initBinder(WebDataBinder binder) {
@@ -34,13 +34,13 @@ public class TodoController {
 	}
 
 	@RequestMapping(value = "/list-todos", method = RequestMethod.GET)
-	public String showTodos(ModelMap model) {
+	public String showEvents(ModelMap model) {
 		if (!model.containsAttribute("name"))
 			return "redirect:/login";
 
 		String name = getLoggedInUserName(model);
 		model.put("todos", repository.findByUserOrderByTargetDateAsc(name));
-		// model.put("todos", service.retrieveTodos(name));
+		// model.put("todos", service.retrieveEvents(name));
 		return "list-todos";
 	}
 
@@ -49,31 +49,31 @@ public class TodoController {
 	}
 
 	@RequestMapping(value = "/add-todo", method = RequestMethod.GET)
-	public String showAddTodoPage(ModelMap model) {
-		model.addAttribute("todo", new Todo(0, getLoggedInUserName(model), "Default Desc", new Date(), false));
+	public String showAddEventPage(ModelMap model) {
+		model.addAttribute("todo", new Event(0, getLoggedInUserName(model), "Default Desc", new Date(), false));
 		return "todo";
 	}
 
 	@RequestMapping(value = "/delete-todo", method = RequestMethod.GET)
-	public String deleteTodo(@RequestParam int id) {
+	public String deleteEvent(@RequestParam int id) {
 
 		// if(id==1)
 		// throw new RuntimeException("Something went wrong");
 		repository.deleteById(id);
-		// service.deleteTodo(id);
+		// service.deleteEvent(id);
 		return "redirect:/list-todos";
 	}
 
 	@RequestMapping(value = "/update-todo", method = RequestMethod.GET)
-	public String showUpdateTodoPage(@RequestParam int id, ModelMap model) {
-		Todo todo = repository.findById(id).get();
-		// Todo todo = service.retrieveTodo(id);
+	public String showUpdateEventPage(@RequestParam int id, ModelMap model) {
+		Event todo = repository.findById(id).get();
+		// Event todo = service.retrieveEvent(id);
 		model.put("todo", todo);
 		return "todo";
 	}
 
 	@RequestMapping(value = "/update-todo", method = RequestMethod.POST)
-	public String updateTodo(ModelMap model, @Validated Todo todo, BindingResult result) {
+	public String updateEvent(ModelMap model, @Validated Event todo, BindingResult result) {
 
 		if (result.hasErrors()) {
 			return "todo";
@@ -82,13 +82,13 @@ public class TodoController {
 		todo.setUser(getLoggedInUserName(model));
 
 		repository.save(todo);
-		// service.updateTodo(todo);
+		// service.updateEvent(todo);
 
 		return "redirect:/list-todos";
 	}
 
 	@RequestMapping(value = "/add-todo", method = RequestMethod.POST)
-	public String addTodo(ModelMap model, @Validated Todo todo, BindingResult result) {
+	public String addEvent(ModelMap model, @Validated Event todo, BindingResult result) {
 
 		if (result.hasErrors()) {
 			return "todo";
@@ -97,7 +97,7 @@ public class TodoController {
 		todo.setUser(getLoggedInUserName(model));
 		repository.save(todo);
 		/*
-		 * service.addTodo(getLoggedInUserName(model), todo.getDesc(),
+		 * service.addEvent(getLoggedInUserName(model), todo.getDesc(),
 		 * todo.getTargetDate(), false);
 		 */
 		return "redirect:/list-todos";
