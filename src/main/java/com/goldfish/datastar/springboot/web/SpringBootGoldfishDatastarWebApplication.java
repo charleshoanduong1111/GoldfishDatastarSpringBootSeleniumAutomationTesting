@@ -6,11 +6,11 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan("com.goldfish.datastar.springboot.web")
-public class SpringBootFirstWebApplication {
+public class SpringBootGoldfishDatastarWebApplication {
 
 	public static void main(String[] args) {
 		
-		SpringApplication.run(SpringBootFirstWebApplication.class, args);
+		SpringApplication.run(SpringBootGoldfishDatastarWebApplication.class, args);
 		
 		System.out.println("===> To start the Server Online, please on Browser type LOCALHOST URL as below:");
 		System.out.println("===> http://localhost:8080");
