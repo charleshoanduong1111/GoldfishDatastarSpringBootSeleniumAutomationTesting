@@ -22,7 +22,6 @@ public class TestOpenUdemy extends GoldfishDatastarAbstractChromeWebDriverTest {
 		WebElement oKButton = driver.findElement(By.id("onetrust-accept-btn-handler"));
 		System.out.println("sleep-3 5000 > View Current Page: " + driver.getCurrentUrl());
 		oKButton.click();
-
 	}
 
 }

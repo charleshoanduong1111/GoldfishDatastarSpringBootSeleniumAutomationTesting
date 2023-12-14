@@ -15,7 +15,6 @@ public class TestOpenFacebook extends GoldfishDatastarAbstractChromeWebDriverTes
 		System.out.println("Curent page: " + driver.getCurrentUrl());
 
 		Thread.sleep(5000); // Let the user actually see something!
-
 	}
 
 }

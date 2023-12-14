@@ -24,7 +24,6 @@ public abstract class GoldfishDatastarAbstractChromeWebDriverTest {
 		// WebDriver driver = new ChromeDriver();
 		// driver.get("http://www.google.com");
 		// driver.quit();
-
 	}
 
 	@AfterEach

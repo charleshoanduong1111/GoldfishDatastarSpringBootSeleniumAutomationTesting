@@ -9,9 +9,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 public class SpringBootGoldfishDatastarWebApplicationTest {
-
+	
 	@Test
 	public void contextLoads() {
 	}
-
 }
