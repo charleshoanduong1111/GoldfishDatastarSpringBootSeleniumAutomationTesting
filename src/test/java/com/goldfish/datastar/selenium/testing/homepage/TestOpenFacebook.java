@@ -1,9 +1,12 @@
-package com.goldfish.datastar.selenium.testing;
-
-import org.junit.jupiter.api.Test;
+package com.goldfish.datastar.selenium.testing.homepage;
 
 
-public class TestOpenFacebook extends GoldfishDatastarAbstractChromeWebDriverTest {
+import org.testng.annotations.Test;
+
+import com.goldfish.datastar.selenium.testing.webdriver.GoldfishDatastarAbstractChromeWebDriverTestNgTest;
+
+
+public class TestOpenFacebook extends GoldfishDatastarAbstractChromeWebDriverTestNgTest {
 
 	@Test
 	public void testOpenFacebookHomepage() throws Exception {

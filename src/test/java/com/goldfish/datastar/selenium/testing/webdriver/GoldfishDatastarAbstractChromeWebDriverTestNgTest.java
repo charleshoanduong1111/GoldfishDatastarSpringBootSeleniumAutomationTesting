@@ -1,32 +1,28 @@
-package com.goldfish.datastar.selenium.testing;
+package com.goldfish.datastar.selenium.testing.webdriver;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
-public abstract class GoldfishDatastarAbstractChromeWebDriverTest {
+public abstract class GoldfishDatastarAbstractChromeWebDriverTestNgTest {
 
 	protected WebDriver driver;
 
-	public GoldfishDatastarAbstractChromeWebDriverTest() {
+	public GoldfishDatastarAbstractChromeWebDriverTestNgTest() {
 		super();
 	}
 
-	@BeforeEach
+	@BeforeTest
 	public void beforeTest() {
 		System.err.println("System.setProperty");
 		System.setProperty("webdriver.chrome.driver", "./chromedriver-version-120/chromedriver.exe");
 
 		driver = new ChromeDriver();
 
-		// WebDriverManager.chromedriver().setup();
-		// WebDriver driver = new ChromeDriver();
-		// driver.get("http://www.google.com");
-		// driver.quit();
 	}
 
-	@AfterEach
+	@AfterTest
 	public void afterTest() {
 		driver.quit();
 	}

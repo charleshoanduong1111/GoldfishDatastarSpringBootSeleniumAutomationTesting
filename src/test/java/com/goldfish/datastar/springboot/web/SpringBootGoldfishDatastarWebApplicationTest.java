@@ -1,6 +1,7 @@
 package com.goldfish.datastar.springboot.web;
 
-import org.junit.jupiter.api.Test;
+
+import org.testng.annotations.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 //import org.junit.runner.RunWith;

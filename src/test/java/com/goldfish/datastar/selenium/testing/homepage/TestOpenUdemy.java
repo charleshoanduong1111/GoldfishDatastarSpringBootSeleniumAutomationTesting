@@ -1,12 +1,14 @@
-package com.goldfish.datastar.selenium.testing;
+package com.goldfish.datastar.selenium.testing.homepage;
 
 import static org.junit.Assert.assertEquals;
 
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
 
-public class TestOpenUdemy extends GoldfishDatastarAbstractChromeWebDriverTest {
+import com.goldfish.datastar.selenium.testing.webdriver.GoldfishDatastarAbstractChromeWebDriverTestNgTest;
+
+public class TestOpenUdemy extends GoldfishDatastarAbstractChromeWebDriverTestNgTest {
 
 	@Test
 	public void testOpenUdemyHomepage() throws Exception {
