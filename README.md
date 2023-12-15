@@ -99,3 +99,7 @@ Provide your GitHub credentials and click “Next.”
 Select the branches you want to push and click “Next.”
 Review the push settings and click “Finish.”
 
+### Create Maven Project with Archetype in Eclipse:
+To create a new Maven Web-Applicaton project: Please find and read "Create Maven Project with Archetype in Eclipse.pdf" or click:
+https://github.com/charleshoanduong1111/GoldfishDatastarApp/blob/master/Create%20Maven%20Project%20with%20Archetype%20in%20Eclipse.pdf
+
