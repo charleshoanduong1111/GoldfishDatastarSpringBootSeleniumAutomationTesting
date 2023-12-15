@@ -1,7 +1,15 @@
 
 <nav role="navigation" class="navbar navbar-default">
+	<div >
+		<a href="https://github.com/charleshoanduong1111?tab=repositories" 
+		class="navbar-brand"
+		style="font-size: 14px; background-color: black; color: red; height: 40px;" >
+		Charles H. Duong | Goldfish Datastar</a>
+	</div>
+	<br>
+	<hr>
 	<div class="">
-		<a href="https://github.com/charleshoanduong1111?tab=repositories" class="navbar-brand">Charles H. Duong | Goldfish Datastar</a>
+		<a href="http://localhost:8080/pages/login.html" class="navbar-brand">Dashboard Home</a>
 	</div>
 	<div class="navbar-collapse">
 		<%

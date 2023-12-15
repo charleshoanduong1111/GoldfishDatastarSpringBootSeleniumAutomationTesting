@@ -20,8 +20,9 @@ TestNG: .\m2\repository\org\testng\testng\7.6.1.jar
 ### To run Selenium Tests via GoldfishDatastarApp Web-Application.
 ##### 1. RUN: .\com.goldfish.datastar.springboot.web\SpringBootGoldfishDatastarWebApplication.
 ##### 2. On Browser type: http://localhost:8080. If ok, you shold see "Charles H. Duong | Goldfish Datastar"
-##### 3. Switch to Test Folder: com.goldfish.datastar.selenium.testing.localhost.*
-##### 4. Select Test-case and right click > Run As > TestNG Test
+##### 3. Login: [Name=goldfish|Password=goldfish] OR Login: [Name=goldfish-datastar|Password=goldfish-datastar]
+##### 4. Switch to Test Folder: com.goldfish.datastar.selenium.testing.localhost.*
+##### 5. Select Test-case and right click > Run As > TestNG Test
 
 
 ## Eclipse | GitHub | [Push|Pull|Merge...]

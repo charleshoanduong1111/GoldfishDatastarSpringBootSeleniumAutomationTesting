@@ -1,7 +1,6 @@
 package com.goldfish.datastar.selenium.testing.localhost.login;
 
-import static org.junit.Assert.assertEquals;
-
+import static org.testng.AssertJUnit.assertEquals;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -16,12 +15,12 @@ public class LogingToLocalhostTest extends GoldfishDatastarAbstractChromeWebDriv
 	  sleep(5);
 	  
 	  WebElement nameElement = driver.findElement(By.name("name"));
-	  nameElement.sendKeys("test");
+	  nameElement.sendKeys("goldfish-datastar");
 	  
 	  sleep(1);
 	  
 	  WebElement passwordElement = driver.findElement(By.id("password"));
-	  passwordElement.sendKeys("test");
+	  passwordElement.sendKeys("goldfish-datastar");
 	  
 	  sleep(1);
 	  

@@ -1,7 +1,7 @@
 package com.goldfish.datastar.selenium.testing.homepage;
 
-import static org.junit.Assert.assertEquals;
 
+import static org.testng.AssertJUnit.assertEquals;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
