@@ -1,9 +1,7 @@
-# GoldfishDatastarApp
+# GoldfishDatastarSpringBootSeleniumAutomationTesting
 
-GoldfishDatastarApp is a Spring-Boot Application used to open for Automation Testing.
-- Selenium Automation Testing.
-- Cypress Automation Testing. (TODO)
-- Rest API Automation Testing (TODO)
+GoldfishDatastarApp is a Spring-Boot Application used for Selenium Automation Testing.
+
 
 ## Selenium Automation Testing by TestNG
 

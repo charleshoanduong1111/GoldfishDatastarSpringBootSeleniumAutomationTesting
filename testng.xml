@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.goldfish.datastar.selenium.testing.localhost.login.LogingToLocalhostTest"/>
+      <class name="com.goldfish.datastar.springboot.web.SpringBootGoldfishDatastarWebApplicationTest"/>
+      <class name="com.goldfish.datastar.selenium.testing.homepage.TestOpenUdemy"/>
+      <class name="com.goldfish.datastar.selenium.testing.localhost.login.LoginToLocalhostPageLoginHtmlTest"/>
+      <class name="com.goldfish.datastar.selenium.testing.localhost.basic.TableTest"/>
+      <class name="com.goldfish.datastar.selenium.testing.homepage.TestOpenFacebook"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
