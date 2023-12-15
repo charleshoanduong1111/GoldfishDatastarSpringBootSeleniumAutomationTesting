@@ -1,6 +1,6 @@
 # GoldfishDatastarSpringBootSeleniumAutomationTesting
 
-GoldfishDatastarApp is a Spring-Boot Application used for Selenium Automation Testing.
+GoldfishDatastarSpringBootSeleniumAutomationTesting is a Spring-Boot Application used for Selenium Automation Testing.
 
 
 ## Selenium Automation Testing by TestNG
