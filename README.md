@@ -1,5 +1,5 @@
 # springboot-jsp-webapp-selenium-automation-testing
-springboot-jsp-webapp-selenium-automation-testing project is a Spring-Boot Application used for Selenium Automation Testing.
+springboot-jsp-webapp-selenium-automation-testing project is a Spring-Boot/JSP Web-Application used for Selenium Automation Testing.
 
 
 ## Selenium Automation Testing by TestNG
